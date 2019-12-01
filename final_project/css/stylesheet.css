@@ -89,27 +89,27 @@ b, i {
 }
 
 .adageDeco {
-
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .submissionDeco{
-
+font-family: 'Gloria Hallelujah', cursive;
 }
 
 .unstoppableDeco {
-
+font-family: 'Gloria Hallelujah', cursive;
 }
 
 .exploitDeco {
-
+font-family: 'Gloria Hallelujah', cursive;
 }
 
 .ascendDeco {
-
+font-family: 'Gloria Hallelujah', cursive;
 }
 
 .unconcernedDeco{
-
+font-family: 'Gloria Hallelujah', cursive;
 }
 
 .quote1Deco {
@@ -118,9 +118,13 @@ b, i {
 }
 
 .quote2Deco {
-
+  font-family: 'Walter Turncoat', cursive;
+  color: white;
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  letter-spacing: 20px;
 }
 
 .quote3Deco {
-  
+  font-family: 'Walter Turncoat', cursive;
 }
