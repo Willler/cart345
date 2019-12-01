@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Tinos&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
 
 body {
   padding: 0;
@@ -43,7 +44,7 @@ canvas {
 
 }
 
-b {
+b, i {
   animation: text-flicker 2s linear infinite;
 }
 
@@ -81,4 +82,45 @@ b {
 
 .fleshDeco {
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.beyondDeco {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.adageDeco {
+
+}
+
+.submissionDeco{
+
+}
+
+.unstoppableDeco {
+
+}
+
+.exploitDeco {
+
+}
+
+.ascendDeco {
+
+}
+
+.unconcernedDeco{
+
+}
+
+.quote1Deco {
+  font-family: 'Walter Turncoat', cursive;
+  color: cyan;
+}
+
+.quote2Deco {
+
+}
+
+.quote3Deco {
+  
 }

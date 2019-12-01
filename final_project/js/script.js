@@ -4,14 +4,30 @@
 
 var canvas;
 
+// variables for the pulsing background imagery
+let backgroundImageAngle = 0;
+let backgroundImageSize = 800;
+
+// preloading some sound effects
+let eerie1SFX = new Audio("assets/sounds/eerie1.wav");
+let eerie2SFX = new Audio("assets/sounds/eerie2.wav");
+let eerie3SFX = new Audio("assets/sounds/eerie3.wav");
+let music = new Audio("assets/sounds/backgroundMusic.wav");
+
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight*11);
+  canvas = createCanvas(windowWidth, windowHeight*12);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
+
+  // scrollingFunction();
 }
 
 function draw() {
   background(150);
+
+  // this variable is what makes the background pulsate, using a sine function
+  var imageGrowth = sin(backgroundImageAngle) * (backgroundImageSize/20);
+
   rectMode(CENTER);
   noStroke();
   fill(200, 0, 0);
@@ -36,7 +52,56 @@ function draw() {
   rect(windowWidth-900, windowHeight*6 -750, 600, 100);
 
   //5th paragraph
-  rect(500, windowHeight*8 - 150, 500, 500);
+  rect(250, windowHeight*8 - 150, (backgroundImageSize) + imageGrowth, (backgroundImageSize - 300) + imageGrowth);
+  rect(650, windowHeight*8 - 650, (backgroundImageSize + 200) + imageGrowth, (backgroundImageSize - 600) + imageGrowth);
+  rect(windowWidth/2 + 200, windowHeight*8 - 400, (backgroundImageSize - 600) + imageGrowth, (backgroundImageSize - 700) + imageGrowth);
+  rect(1000, windowHeight*8 + 100 , (backgroundImageSize - 400) + imageGrowth, (backgroundImageSize - 600) + imageGrowth);
+
+
   //6th paragraph
   rect(500, windowHeight*10, 500, 500);
+
+  // the angle of the sine function used to make the background pulsate
+  backgroundImageAngle += 0.2;
 }
+
+// jQuery(document).ready(function($){
+//
+// 		let $eerie1TriggeredTimes = 0;
+//     let $eerie2TriggeredTimes = 0;
+//     let $eerie3TriggeredTimes = 0;
+//     let $musicTriggeredTimes = 0;
+//
+// 		$(window).on('scroll', function() {
+// 				var y_scroll_pos = window.pageYOffset;
+// 				var eerie1_scroll_pos_test = 2500;
+//         var eerie2_pos_test = 4500;
+//         var eerie3_pos_test = 6500;
+//         var music_pos_test = 1000;
+//
+// 				if(y_scroll_pos > eerie1_scroll_pos_test && $eerie1TriggeredTimes == 0 ) {
+// 					eerie1SFX.play();
+// 					$eerie1TriggeredTimes = 1;
+//           console.log('eerie1');
+// 				}
+//
+//         if(y_scroll_pos > eerie2_pos_test && $eerie2TriggeredTimes == 0 ) {
+// 					eerie2SFX.play();
+// 					$eerie2TriggeredTimes = 1;
+//           console.log('eerie2');
+// 				}
+//
+//         if(y_scroll_pos > eerie3_pos_test && $eerie3TriggeredTimes == 0 ) {
+// 					eerie1SFX.play();
+// 					$eerie3TriggeredTimes = 1;
+//           console.log('eerie3');
+// 				}
+//
+//         if(y_scroll_pos > music_pos_test && $musicTriggeredTimes == 0 ) {
+// 					music.play();
+// 					$musicTriggeredTimes = 1;
+//           console.log('music');
+// 				}
+// 		});
+//
+// 	})
