@@ -71,48 +71,48 @@ function draw() {
   backgroundImageAngle += 0.2;
 }
 
-// jQuery(document).ready(function($){
-//
-// 		let $eerie1TriggeredTimes = 0;
-//     let $eerie2TriggeredTimes = 0;
-//     let $eerie3TriggeredTimes = 0;
-//     let $musicTriggeredTimes = 0;
-//
-// 		$(window).on('scroll', function() {
-// 				var y_scroll_pos = window.pageYOffset;
-// 				var eerie1_scroll_pos_test = 2500;
-//         var eerie2_pos_test = 4500;
-//         var eerie3_pos_test = 6500;
-//         var music_pos_test = 1000;
-//
-// 				if(y_scroll_pos > eerie1_scroll_pos_test && $eerie1TriggeredTimes == 0 ) {
-// 					eerie1SFX.play();
-// 					$eerie1TriggeredTimes = 1;
-//           console.log('eerie1');
-//           alert('Turn back while you can. This is beyond the scope of your imagination.');
-//           responsiveVoice.speak("Turn back while you can. This is beyond the scope of your imagination.", 'UK English Male', options);
-// 				}
-//
-//         if(y_scroll_pos > eerie2_pos_test && $eerie2TriggeredTimes == 0 ) {
-// 					eerie2SFX.play();
-// 					$eerie2TriggeredTimes = 1;
-//           console.log('eerie2');
-//           alert('An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.');
-//           responsiveVoice.speak("An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.", 'UK English Male', options);
-// 				}
-//
-//         if(y_scroll_pos > eerie3_pos_test && $eerie3TriggeredTimes == 0 ) {
-// 					eerie1SFX.play();
-// 					$eerie3TriggeredTimes = 1;
-//           console.log('eerie3');
-//           alert('Not heeding warnings, you cross the event horizon and now, it is too late. You have lost all control.');
-//           responsiveVoice.speak('Not heeding warnings, you cross the event horizon and now, it is too late. You have lost all control.', 'UK English Male', options);
-// 				}
-//
-//         if(y_scroll_pos > music_pos_test && $musicTriggeredTimes == 0 ) {
-// 					music.play();
-// 					$musicTriggeredTimes = 1;
-//           console.log('music');
-// 				}
-// 		});
-	// })
+jQuery(document).ready(function($){
+
+		let $eerie1TriggeredTimes = 0;
+    let $eerie2TriggeredTimes = 0;
+    let $eerie3TriggeredTimes = 0;
+    let $musicTriggeredTimes = 0;
+
+		$(window).on('scroll', function() {
+				var y_scroll_pos = window.pageYOffset;
+				var eerie1_scroll_pos_test = 2500;
+        var eerie2_pos_test = 4500;
+        var eerie3_pos_test = 6500;
+        var music_pos_test = 1000;
+
+				if(y_scroll_pos > eerie1_scroll_pos_test && $eerie1TriggeredTimes == 0 ) {
+					eerie1SFX.play();
+					$eerie1TriggeredTimes = 1;
+          console.log('eerie1');
+          alert('Turn back while you can. This is beyond the scope of your imagination.');
+          responsiveVoice.speak("Turn back while you can. This is beyond the scope of your imagination.", 'UK English Male', options);
+				}
+
+        if(y_scroll_pos > eerie2_pos_test && $eerie2TriggeredTimes == 0 ) {
+					eerie2SFX.play();
+					$eerie2TriggeredTimes = 1;
+          console.log('eerie2');
+          alert('An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.');
+          responsiveVoice.speak("An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.", 'UK English Male', options);
+				}
+
+        if(y_scroll_pos > eerie3_pos_test && $eerie3TriggeredTimes == 0 ) {
+					eerie1SFX.play();
+					$eerie3TriggeredTimes = 1;
+          console.log('eerie3');
+          alert('Not heeding warnings, you cross the event horizon and now, it is too late. You have lost all control.');
+          responsiveVoice.speak('Not heeding warnings, you cross the event horizon and now, it is too late. You have lost all control.', 'UK English Male', options);
+				}
+
+        if(y_scroll_pos > music_pos_test && $musicTriggeredTimes == 0 ) {
+					music.play();
+					$musicTriggeredTimes = 1;
+          console.log('music');
+				}
+		});
+	})
