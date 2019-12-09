@@ -24,7 +24,7 @@ let reverseSFX = new Audio("assets/sounds/reverse.wav");
 let music = new Audio("assets/sounds/backgroundMusic.wav");
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight*17);
+  canvas = createCanvas(windowWidth, windowHeight*18);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
 
@@ -143,7 +143,7 @@ jQuery(document).ready(function($){
 					$eerie1TriggeredTimes = 1;
           console.log('eerie1');
           responsiveVoice.speak("Turn back while you can. This is beyond the scope of your imagination.", 'UK English Male', options);
-          alert('Turn back while you can. This is beyond the scope of your imagination.');
+          alert('Turn back while you can.');
 				}
 
         if(y_scroll_pos > eerie2_pos_test && $eerie2TriggeredTimes == 0 ) {
@@ -151,7 +151,7 @@ jQuery(document).ready(function($){
 					$eerie2TriggeredTimes = 1;
           console.log('eerie2');
           responsiveVoice.speak("An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.", 'UK English Male', options);
-          alert('An escape from a prison of flesh to the great beyond where possibilities are endless, never to return.');
+          alert('A prison of flesh. A great beyond. A lack of a plan.');
 				}
 
         if(y_scroll_pos > eerie3_pos_test && $eerie3TriggeredTimes == 0 ) {

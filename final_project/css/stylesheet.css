@@ -55,6 +55,32 @@ p {
   letter-spacing: 30px;
   font-family: 'Rock Salt', cursive;
   font-size: 80px;
+  animation: text-fade 3s linear infinite;
+}
+
+@keyframes text-fade {
+  0% {
+    opacity:1;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 canvas {
@@ -146,17 +172,25 @@ text-decoration: line-through;
 
 .quote1Deco {
   font-family: 'Walter Turncoat', cursive;
-  color: cyan;
+  color: white;
+  text-decoration-style: wavy;
+  text-decoration: line-through;
+  text-decoration-color: red;
 }
 
 .quote2Deco {
   font-family: 'Walter Turncoat', cursive;
   color: white;
-  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration: line-through;
   text-decoration-color: red;
   letter-spacing: 20px;
 }
 
 .quote3Deco {
   font-family: 'Walter Turncoat', cursive;
+  color: white;
+  text-decoration-style: dotted;
+  text-decoration: line-through;
+  text-decoration-color: red;
 }
