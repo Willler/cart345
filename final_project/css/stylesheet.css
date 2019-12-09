@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Tinos&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 
 body {
   padding: 0;
@@ -40,6 +41,22 @@ p {
   text-align: right;
 }
 
+.fourth {
+  letter-spacing: 20px;
+}
+
+.fifth {
+  letter-spacing: 30px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px;
+}
+
+.sixth {
+  letter-spacing: 30px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px;
+}
+
 canvas {
 
 }
@@ -74,6 +91,7 @@ b, i {
 .intangibilityDeco {
   font-family: 'Gloria Hallelujah', cursive;
   color: white;
+  text-decoration: line-through;
 }
 
 .hubrisDeco {
@@ -82,34 +100,48 @@ b, i {
 
 .fleshDeco {
   font-family: 'Gloria Hallelujah', cursive;
+  text-decoration: overline;
 }
 
 .beyondDeco {
   font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 5px 5px red;
 }
 
 .adageDeco {
   font-family: 'Gloria Hallelujah', cursive;
+  text-decoration: overline;
+  text-shadow: 2px 2px white;
 }
 
 .submissionDeco{
 font-family: 'Gloria Hallelujah', cursive;
+text-decoration: overline;
+text-shadow: 5px 5px red;
 }
 
 .unstoppableDeco {
 font-family: 'Gloria Hallelujah', cursive;
+text-shadow: 2px 2px white;
+text-decoration: line-through;
 }
 
 .exploitDeco {
 font-family: 'Gloria Hallelujah', cursive;
+text-shadow: 5px 5px red;
+text-decoration: line-through;
 }
 
 .ascendDeco {
 font-family: 'Gloria Hallelujah', cursive;
+text-decoration: overline;
+text-shadow: 5px 5px red;
 }
 
 .unconcernedDeco{
 font-family: 'Gloria Hallelujah', cursive;
+text-shadow: 2px 2px white;
+text-decoration: line-through;
 }
 
 .quote1Deco {
