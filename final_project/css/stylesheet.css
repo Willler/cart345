@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Zeyada&display=swap');
 
 body {
   padding: 0;
@@ -43,6 +44,8 @@ p {
 
 .fourth {
   letter-spacing: 20px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px;
 }
 
 .fifth {
@@ -52,9 +55,9 @@ p {
 }
 
 .sixth {
-  letter-spacing: 30px;
-  font-family: 'Rock Salt', cursive;
-  font-size: 80px;
+  letter-spacing: 25px;
+  font-family: 'Zeyada', cursive;
+  font-size: 100px;
   animation: text-fade 3s linear infinite;
 }
 

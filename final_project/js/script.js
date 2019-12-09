@@ -114,6 +114,30 @@ function draw() {
   rect(900, windowHeight*13 + 1300 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
   rect(850, windowHeight*13 + 1650 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
   rect(1000, windowHeight*13 + 1700 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+// ellipses
+
+  noStroke();
+  fill(215);
+
+  ellipse(500, windowHeight*12 + 900 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(900, windowHeight*12 + 300 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(50, windowHeight*12 + 350 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(200, windowHeight*12 + 700 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+
+  ellipse(1100, windowHeight*12 + 1200 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(900, windowHeight*12 + 1300 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(850, windowHeight*12 + 1650 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(1000, windowHeight*12 + 1700 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+
+  ellipse(500, windowHeight*14 + 900 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(900, windowHeight*14 + 300 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(50, windowHeight*14 + 350 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(200, windowHeight*14 + 700 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+
+  ellipse(1100, windowHeight*14 + 1200 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(900, windowHeight*14 + 1300 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(850, windowHeight*14 + 1650 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
+  ellipse(1000, windowHeight*14 + 1700 , (backgroundImageSize - 750) + imageGrowth, (backgroundImageSize - 750) + imageGrowth);
 
 
   // the angle of the sine function used to make the background pulsate
